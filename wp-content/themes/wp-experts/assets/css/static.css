@@ -5697,7 +5697,7 @@ input::-ms-placeholder, textarea::-ms-placeholder {
     display: block;
     line-height: 100px; }
   #cshero-header-inner #cshero-header #cshero-header-logo a img {
-    height: 49px;
+    height: 100px;
     -webkit-transition: all 300ms linear 0ms;
     -moz-transition: all 300ms linear 0ms;
     -ms-transition: all 300ms linear 0ms;
