@@ -1,0 +1,20 @@
+<wpml-config>
+    <admin-texts>
+        <key name="smof_data">
+            <key name="top_button_text" />
+            <key name="top_wellcome" />
+            <key name="top_email" />
+            <key name="top_visit" />
+            <key name="cms-copyright" />
+            <key name="cms-footer-menu" />
+            <key name="hd_feature_1" />
+            <key name="hd_feature_2" />
+            <key name="hd_feature_3" />
+            <key name="cms-call-us" />
+            <key name="cms-come-visit" />
+            <key name="cms-send-us" />
+        </key> 
+    </admin-texts>   
+</wpml-config>
+
+

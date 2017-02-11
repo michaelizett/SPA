@@ -1,0 +1,407 @@
+/* ==========================================================================
+   [Start] All Style Form
+========================================================================== */
+.box-light {
+    background-color: #fff;
+    padding: 50px 50px 27px;
+    .row:last-child {
+        margin-bottom: 0;
+    }
+}
+input[type='text'],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea, select {
+    background-color: transparent;
+    color: #9b9b9b;
+    font-size: 13px;
+    padding: 10px 18px;
+    line-height: normal;
+    width: 100%;
+    @include border-radius(1px);
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e8e8e8;
+    height: 42px;
+}
+textarea {
+    height: 165px;
+    max-width: 100%;
+    padding: 15px 18px;
+}
+input[type='text']:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    border-color: $primary_color;
+}
+/** Contact Form 7 */
+.wpcf7-form {
+    .wpcf7-form-item {
+        margin-bottom: 20px;
+    }
+    .wpcf7-not-valid-tip {
+        font-size: 12px;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        color: #d94e90;
+    }
+    textarea + .wpcf7-not-valid-tip {
+        top: -10px;
+    }
+    .wpcf7-validation-errors {
+        border: medium none;
+        display: block;
+        text-align: left;
+        margin: 20px 0 0;
+    }
+    input[type='text'],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    textarea, select {
+        height: 51px;
+        border-width: 0 0 2px 0;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-left: 0;
+        &:focus {
+            border-color: #e8e8e8;
+        }
+    }
+    textarea {
+        height: 95px;
+        vertical-align: bottom;
+    }
+    .input-filled {
+        position: relative;
+        &:before {
+            height: 2px;
+            width: 100%;
+            max-width: 0;
+            background-color: $primary_color;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            display: block;
+            @include transition(all 400ms ease 0ms);
+        }
+        &.input-filled-active:before {
+            max-width: 2000px;
+        }
+    }
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+input::-webkit-input-placeholder, textarea::-webkit-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+input::-o-placeholder, textarea::-o-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #9b9b9b;
+    opacity: 1;
+}
+.placeholder-dark input::-moz-placeholder, .placeholder-dark textarea::-moz-placeholder {
+    color: #474747;
+    opacity: 1;
+}
+.placeholder-dark input::-webkit-input-placeholder, .placeholder-dark textarea::-webkit-input-placeholder {
+    color: #474747;
+    opacity: 1;
+}
+.placeholder-dark input::-o-placeholder, .placeholder-dark textarea::-o-placeholder {
+    color: #474747;
+    opacity: 1;
+}
+.placeholder-dark input::-ms-placeholder, .placeholder-dark textarea::-ms-placeholder {
+    color: #474747;
+    opacity: 1;
+}
+.placeholder-dark input {
+    color: #474747;
+}
+.element-form-post {
+    position: relative;
+    i {
+        left: 20px;
+        position: absolute;
+        top: 16px;
+    }
+}
+.wpcf7-form {
+    .row {
+        margin-bottom: 30px;
+    }
+    .form-white {
+        .wpcf7-form-control, .wpcf7-form-control:focus {
+            border-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+    }
+    [class*="menu-"] {
+        position: relative;
+        &:before {
+            content: "\f107";
+            font-family: FontAwesome;
+            font-size: 19px;
+            position: absolute;
+            top: -2px;
+            right: 0;
+            z-index: 1;
+            color: #9b9b9b;
+            font-weight: normal;
+        }
+    }
+    input[type='text'] {
+        padding-left: 0;
+    }
+    select {
+        -webkit-appearance:  none; 
+          -khtml-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+          position: relative;
+          z-index: 2;
+          &:hover {
+            cursor: pointer;
+          }
+        option {
+            color: $color_dark;
+        }
+    }
+    textarea {
+        padding-left: 0;
+    }
+    &.style-service {
+        input[type='text'],
+        input[type="password"],
+        input[type="datetime"],
+        input[type="datetime-local"],
+        input[type="date"],
+        input[type="month"],
+        input[type="time"],
+        input[type="week"],
+        input[type="number"],
+        input[type="email"],
+        input[type="url"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="color"],
+        textarea, select {
+            height: 42px;
+            border-width: 0px;
+            background-color: #fff;
+            text-transform: uppercase;
+            padding: 12px 22px;
+        }
+        .input-filled:before {
+            display: none;
+        }
+        textarea {
+            height: 165px;
+        }
+        .row {
+            margin: 0 -10px;
+            margin-bottom: 20px;
+            .col-xs-12 {
+                padding: 0 10px;
+            }
+            &.no-space {
+                margin-bottom: 0;
+            }
+        }
+        .btn-secondary:hover {
+            background-color: transparent;
+            color: $color_dark;
+            border-color: $color_dark;
+        }
+
+    }
+}
+.wpcf7-form .wpcf7-response-output, .wpcf7-not-valid-tip {
+    font-size: 13px;
+    font-style: italic;
+    &.wpcf7-validation-errors {
+        color: #222;
+    }
+    &.wpcf7-mail-sent-ng {
+        border: none;
+        padding: 0;
+        color: $primary_color;
+    }
+}   
+.wpcf7-not-valid-tip {
+    color: $primary_color !important;
+}
+.request-form {
+    .request-form-header {
+        background-color: $primary_color;
+        color: #fff;
+        padding: 26px 30px 30px;
+        position: relative;
+        .get-form-quote {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .scroll-to-content {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .lnr {
+            float: left;
+            font-size: 40px;
+            position: relative;
+            top: 8px;
+            width: 65px;
+        }
+        h3 {
+            color: #fff;
+            font-size: 22px;
+            line-height: 1;
+            text-transform: uppercase;
+            margin: 5px 0 0;
+        }
+        p {
+            margin: 0;
+        }
+        .request-form-inner {
+            position: relative;
+            padding-left: 65px;
+            &:before {
+                background-color: #ff8600;
+                content: "";
+                height: 22px;
+                left: 51px;
+                position: absolute;
+                top: 50%;
+                transform: translate(0px, -50%);
+                width: 2px;
+            }
+        }
+    }
+    .request-form-content {
+        background-color: #f9f9f9;
+        padding: 30px 50px 50px;
+        @include box-shadow(0 2.3px 2px 0.1px #f1f1f1);
+        border: 1px solid #f7f7f7;
+        div {
+            margin-bottom: 19px;
+            &:last-child {
+                margin-bottom: 0;
+                padding-top: 11px;
+            }
+        }
+        p {
+            margin: 0;
+        }
+        .wpcf7-textarea {
+            margin-top: 11px;
+        }
+    }
+    .ajax-loader {
+        display: none;
+    }
+    .request-form-content-vc {
+        background-color: $primary_color;
+        border-top: 2px solid #fff;
+        padding: 50px;
+        .btn:hover {
+            border-color: $secondary_color;
+            background-color: transparent;
+            color: $secondary_color;
+        }
+    }
+}
+.fr-bg-white .request-form .request-form-content {
+    background-color: #fff;
+}
+.bg-gray {
+    input[type='text'],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    textarea, select {
+        background-color: #d8d8d8;
+        border-color: #d8d8d8;
+        padding-left: 20px;
+    }
+    .wpcf7-submit {
+        height: 95px;
+        &:hover {
+            background-color: #fff;
+            border-color: #fff;
+            color: $primary_color;
+        }
+    }
+}
+.style-dark {
+    input[type='text'], input[type='email'], textarea, select {
+        border-color: #3f3f3f;
+    }
+}
+/* ==========================================================================
+   [End] All Style Form
+========================================================================== */
